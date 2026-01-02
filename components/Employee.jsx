@@ -280,7 +280,6 @@ const Employee = () => {
                         <td className="px-6 py-3 whitespace-nowrap text-sm text-gray-700">
                           {e.yoe}
                         </td>
-                        {/* Added currency formatting */}
                         <td className="px-6 py-3 whitespace-nowrap text-sm text-gray-700">
                           <span className="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
                             {e.departmentName}
@@ -312,7 +311,6 @@ const Employee = () => {
                 </table>
               </div>
 
-              {/* --- Pagination Section --- */}
               <div className="mt-6 flex justify-between items-center px-2">
                 <span className="text-sm text-gray-600">
                   Page{" "}
@@ -575,7 +573,7 @@ const Employee = () => {
                 <button
                   type="submit"
                   className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 flex items-center justify-center gap-2"
-                  disabled={save} // disable button while saving
+                  disabled={save} 
                 >
                   {save && <Loader2 className="animate-spin h-4 w-4" />}
                   {save ? "Saving..." : "Save"}

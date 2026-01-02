@@ -17,6 +17,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
+
           <Route
             path="/employee"
             element={
@@ -25,7 +26,10 @@ function App() {
               </ProtectedRoute>
             }
           />
+
           <Route path="/unauthorized" element={<UnauthorizedPage />} />
+
+          <Route path="*" element={<UnauthorizedPage />} />
         </Routes>
       </Router>
     </>

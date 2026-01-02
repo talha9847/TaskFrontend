@@ -3,7 +3,6 @@ import { ShieldX, ArrowLeft, LogIn } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function UnauthorizedPage() {
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleGoBack = () => {
     if (window.history.length > 1) {
