@@ -101,6 +101,7 @@ const Employee = () => {
           setSave(false);
           setEditOpen(false);
           getEmp();
+          setSelectedDept(0)
         }
       }
     } catch (error) {
@@ -274,7 +275,7 @@ const Employee = () => {
                           {e.name}
                         </td>
                         <td className="px-6 py-3 whitespace-nowrap text-sm text-gray-700">
-                          ${e.salary.toLocaleString()}
+                          {e.salary.toLocaleString()}
                         </td>
                         <td className="px-6 py-3 whitespace-nowrap text-sm text-gray-700">
                           {e.yoe}
